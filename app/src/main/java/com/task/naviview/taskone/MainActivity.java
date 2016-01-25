@@ -116,12 +116,15 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             Intent home = new Intent(MainActivity.this, Home.class);
             startActivity(home);
+            Toast.makeText(MainActivity.this, "Home clicked", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_profile) {
             Intent profile = new Intent(MainActivity.this, Profile.class);
             startActivity(profile);
+            Toast.makeText(MainActivity.this, "Profile clicked", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_contact) {
             Intent contact = new Intent(MainActivity.this, Contact.class);
             startActivity(contact);
+            Toast.makeText(MainActivity.this, "Contact clicked", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
